@@ -5,7 +5,7 @@ img = cv2.imread("difficult.PNG")
 img_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
-Filtre_Stop = cv2.CascadeClassifier("stopsign_classifier.xml")
+Filtre_Stop = cv2.CascadeClassifier("panneau.xml")
 
 stop = Filtre_Stop.detectMultiScale(img_gris, scaleFactor=1.1, minNeighbors=4, minSize=(20, 20))
 
