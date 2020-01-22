@@ -1,7 +1,7 @@
 import cv2
 from matplotlib import pyplot as plt
 
-img = cv2.imread("difficult.PNG")
+img = cv2.imread("image.png")
 img_gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
@@ -9,7 +9,6 @@ Filtre_Stop = cv2.CascadeClassifier("panneau.xml")
 
 stop = Filtre_Stop.detectMultiScale(img_gris, scaleFactor=1.1, minNeighbors=4, minSize=(20, 20))
 
-print(stop)
 n = len(stop)
 
 if n != 0:
