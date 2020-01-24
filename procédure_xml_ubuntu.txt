@@ -1,6 +1,6 @@
 ######################----A FAIRE SUR UBUNTU DANS LE CMD----##############################"
 
-BEFORE :
+BEFORE : "Avoir un dossier vide avant"
 
 Création 2 dossiers : -----"Faire des 'cd' pour arriver au bon fichier "-----
 >>> mkdir -p images/positif (qq images de l'objet dans un environnement) -> ex:photo avec panneau stop
