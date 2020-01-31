@@ -1,1 +1,10 @@
 https://www.plemaire.net/redimensionner-des-images-en-masse-avec-python
+
+
+def rename (path, new_name, extension):
+    list=os.listdir(path)
+    os.chdir(path)
+    count=1
+    for i in list:
+        os.rename(i, new_name+str(count)+'.'+extension)
+        count +=
