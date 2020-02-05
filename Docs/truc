@@ -1,0 +1,22 @@
+https://www.plemaire.net/redimensionner-des-images-en-masse-avec-python
+
+import os
+
+def rename (path, new_name, extension):
+    list=os.listdir(path)
+    os.chdir(path)
+    count=1
+    for i in list:
+        os.rename(i, new_name+str(count)+'.'+extension)
+        count +=1
+        
+
+path_neg = "/home/mathias/Dropbox/Informatique/Python/IA/Haar_Cascade/1- Panneau/Création xml/Images_Stop/Négatifs"
+path_pos = "/home/mathias/Dropbox/Informatique/Python/IA/Haar_Cascade/1- Panneau/Création xml/Images_Stop/Positifs"
+
+file = negatifs.txt
+f = open(file, 'r')
+txt = f.read())
+
+rename(path_neg, 'image', "jpg") # négatifs 
+rename(path_pos, 'image', "jpg") # positifs 
