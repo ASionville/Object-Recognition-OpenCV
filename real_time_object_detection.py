@@ -38,8 +38,8 @@ print(COLORS[15])
 # load our serialized model from disk
 print("[INFO] Chargement du modele...")
 
-prototxt = "MobileNetSSD_deploy.prototxt"
-model = "MobileNetSSD_deploy.caffemodel"
+prototxt = "Models/MobileNetSSD_deploy.prototxt"
+model = "Models/MobileNetSSD_deploy.caffemodel"
 
 infos = cv2.dnn.readNetFromCaffe(prototxt, model)
 
