@@ -7,7 +7,7 @@ from os.path import isfile, join
 def resize_rename_replace(mypath, new_path, new_name, extension):
     imageFiles = [f for f in listdir(mypath) if isfile(join(mypath, f)) and (f.endswith("G") or f.endswith("g"))]
     #liste = os.listdir(mypath)
-    target = 100
+    target = 1000
     count = 1
 
 
@@ -42,9 +42,9 @@ def write_txt_images(file, path):
 
 
 now_path_neg = "/media/mathias/MATHIAS/negatifs"
-new_path_neg = "/home/mathias/Documents/IA/negatives"
+new_path_neg = "negatives"
 
-file = '/home/mathias/Documents/IA/negatives.txt'
+file = 'negatives.txt'
 fichier = open(file, "w")
 
 resize_rename_replace(now_path_neg, new_path_neg, 'image', "jpg")
