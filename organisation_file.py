@@ -47,6 +47,7 @@ def orga_file(path_images, path_folderxml):
             img_rename = cv2.imwrite(path_newimages, img_resized) # Enregistrement de l'image redimensionner avec le chemin précedent
             with open (path_folderxml + 'negatives.txt', 'a') as f: # Ouverture du fichier negativeS.txt pour inscrire le chemin de l'image
                 f.write("negatives/"+str(count)+extension+'\n') 
+            print(path_newimages)
 
         # On affiche l'erreur s'il y en a une
         except Exception as e:
